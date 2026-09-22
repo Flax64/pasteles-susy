@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteles SUSY | Pastelería Personalizada</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Fuentes de Google: Playfair Display (elegante) y Lato (lectura) -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        pink: {
+                            50: '#fdf2f8',
+                            100: '#fce7f3',
+                            200: '#fbcfe8',
+                            300: '#f9a8d4',
+                            400: '#f472b6',
+                            500: '#ec4899',
+                            600: '#db2777',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#fffdfd] text-gray-800 antialiased selection:bg-pink-200 selection:text-pink-900">
+
+    <!-- Navegación -->
+    <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-sm border-b border-pink-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- Logo y Nombre -->
+                <div class="flex items-center gap-3">
+                    <!-- Aquí se utiliza el archivo local proporcionado -->
+                    <img src="294343089_905604263709300_4509443319377831911_n.jpg" alt="Logo Pasteles SUSY" class="h-14 w-14 rounded-full border-2 border-pink-200 object-cover shadow-sm">
+                    <span class="font-serif font-bold text-2xl text-pink-600 tracking-wide">Pasteles SUSY</span>
+                </div>
+                
+                <!-- Enlaces de navegación -->
+                <div class="hidden md:flex space-x-8 font-medium text-gray-600">
+                    <a href="#inicio" class="hover:text-pink-500 transition-colors duration-300">Inicio</a>
+                    <a href="#servicios" class="hover:text-pink-500 transition-colors duration-300">Servicios</a>
+                    <a href="#pedidos" class="hover:text-pink-500 transition-colors duration-300">¿Cómo pedir?</a>
+                    <a href="#contacto" class="hover:text-pink-500 transition-colors duration-300">Contacto</a>
+                </div>
+
+                <!-- Botón CTA en Navbar -->
+                <div class="hidden md:block">
+                    <a href="https://wa.me/528441070431" target="_blank" class="bg-pink-500 text-white px-5 py-2 rounded-full font-bold shadow-md shadow-pink-500/30 hover:bg-pink-600 transition-all duration-300 flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Cotizar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative bg-pink-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative z-10 pb-8 bg-pink-50 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 pt-10 sm:pt-16 lg:pt-24 px-4 sm:px-6 lg:px-8">
+                
+                <div class="sm:text-center lg:text-left">
+                    <span class="text-pink-500 font-semibold tracking-wider uppercase text-sm bg-pink-100 px-3 py-1 rounded-full">Reposteria Artesanal</span>
+                    
+                    <h1 class="mt-4 text-4xl tracking-tight font-serif font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:leading-tight">
+                        Endulzamos tus <br>
+                        <span class="text-pink-500 italic">momentos especiales</span>
+                    </h1>
+                    
+                    <p class="mt-3 text-base text-gray-600 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 font-light leading-relaxed">
+                        En Pasteles SUSY creamos obras de arte comestibles. Pasteles personalizados bajo pedido para bodas, cumpleaños y cualquier celebración que merezca un toque dulce y único.
+                    </p>
+                    
+                    <div class="mt-8 sm:mt-10 sm:flex sm:justify-center lg:justify-start gap-4">
+                        <a href="https://wa.me/528441070431" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-full text-white bg-pink-500 hover:bg-pink-600 shadow-lg shadow-pink-500/40 md:py-4 md:text-lg md:px-10 transition-transform duration-300 hover:-translate-y-1">
+                            <i class="fa-brands fa-whatsapp mr-2 text-xl"></i> Haz tu pedido
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Imagen decorativa del Hero -->
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+            <img class="h-64 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full rounded-bl-[100px] shadow-2xl" 
+                 src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                 alt="Pastel decorado hermoso">
+        </div>
+    </section>
+
+    <!-- Sección Nuestros Servicios -->
+    <section id="servicios" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-base text-pink-500 font-semibold tracking-wide uppercase">Lo que hacemos</h2>
+                <p class="mt-2 text-3xl leading-8 font-serif font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Diseñados para impresionar y encantar
+                </p>
+                <div class="mt-4 w-24 h-1 bg-pink-300 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Tarjeta Boda -->
+                <div class="bg-pink-50 rounded-3xl overflow-hidden hover:shadow-xl transition-all duration-300 group border border-pink-100 text-center p-8">
+                    <div class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center shadow-md text-pink-400 mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-ring text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-gray-900 mb-4">Bodas y Aniversarios</h3>
+                    <p class="text-gray-600 font-light">Pasteles elegantes, clásicos o modernos, diseñados para ser el centro de atención en tu día más importante.</p>
+                </div>
+
+                <!-- Tarjeta Cumpleaños -->
+                <div class="bg-pink-50 rounded-3xl overflow-hidden hover:shadow-xl transition-all duration-300 group border border-pink-100 text-center p-8">
+                    <div class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center shadow-md text-pink-400 mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-cake-candles text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-gray-900 mb-4">Cumpleaños</h3>
+                    <p class="text-gray-600 font-light">Diseños divertidos, temáticos y coloridos para niños y adultos. ¡Tú pones la idea, nosotros el sabor!</p>
+                </div>
+
+                <!-- Tarjeta Eventos -->
+                <div class="bg-pink-50 rounded-3xl overflow-hidden hover:shadow-xl transition-all duration-300 group border border-pink-100 text-center p-8">
+                    <div class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center shadow-md text-pink-400 mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-champagne-glasses text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-gray-900 mb-4">Eventos Especiales</h3>
+                    <p class="text-gray-600 font-light">Baby showers, bautizos, graduaciones o cualquier fecha que merezca ser celebrada con un pastel excepcional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Cómo Hacer tu Pedido -->
+    <section id="pedidos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-pink-600 rounded-[3rem] shadow-2xl overflow-hidden relative">
+                <!-- Fondo decorativo abstracto -->
+                <div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
+                
+                <div class="py-16 px-6 sm:px-12 lg:px-20 relative z-10 text-center lg:text-left lg:flex lg:items-center lg:justify-between">
+                    <div class="lg:w-1/2">
+                        <h2 class="text-3xl font-serif font-extrabold text-white sm:text-4xl mb-4">
+                            ¿Listo para ordenar tu pastel?
+                        </h2>
+                        <p class="text-pink-100 text-lg font-light mb-8 lg:mb-0 max-w-lg mx-auto lg:mx-0">
+                            Trabajamos bajo pedido para asegurar la máxima frescura y personalización. Todo el proceso es súper sencillo y directo.
+                        </p>
+                    </div>
+                    
+                    <div class="lg:w-1/2 flex flex-col gap-6">
+                        <!-- Pasos -->
+                        <div class="flex items-start text-left bg-white/10 backdrop-blur-sm p-4 rounded-2xl">
+                            <div class="w-10 h-10 shrink-0 bg-white text-pink-600 rounded-full flex items-center justify-center font-bold text-lg mr-4 shadow-sm">1</div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Escríbenos por WhatsApp</h4>
+                                <p class="text-pink-100 text-sm font-light">Envíanos un mensaje para verificar disponibilidad de fecha.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start text-left bg-white/10 backdrop-blur-sm p-4 rounded-2xl">
+                            <div class="w-10 h-10 shrink-0 bg-white text-pink-600 rounded-full flex items-center justify-center font-bold text-lg mr-4 shadow-sm">2</div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Cuéntanos tu idea</h4>
+                                <p class="text-pink-100 text-sm font-light">Manda fotos de referencia, número de porciones y sabor que deseas.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start text-left bg-white/10 backdrop-blur-sm p-4 rounded-2xl">
+                            <div class="w-10 h-10 shrink-0 bg-white text-pink-600 rounded-full flex items-center justify-center font-bold text-lg mr-4 shadow-sm">3</div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Cotización y Anticipo</h4>
+                                <p class="text-pink-100 text-sm font-light">Te damos el precio exacto. Separas con anticipo y ¡listo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="https://wa.me/528441070431" target="_blank" class="inline-flex items-center justify-center px-10 py-4 border border-transparent text-lg font-bold rounded-full text-white bg-[#25D366] hover:bg-[#20b858] shadow-[0_4px_20px_rgba(37,211,102,0.4)] transition-all duration-300 hover:scale-105">
+                    <i class="fa-brands fa-whatsapp mr-3 text-2xl"></i> Iniciar pedido ahora
+                </a>
+                <p class="mt-4 text-gray-500 font-light text-sm">Respondemos mensajes en horario de atención comercial.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="py-20 bg-pink-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-serif font-extrabold text-gray-900 sm:text-4xl mb-6">Contáctanos</h2>
+            <p class="text-lg text-gray-600 font-light mb-8">Estamos listos para hacer realidad el pastel de tus sueños. Escríbenos directamente a nuestro WhatsApp y te atenderemos de forma personalizada.</p>
+            <div class="bg-white p-8 rounded-3xl shadow-md inline-block border border-pink-100">
+                <div class="w-16 h-16 mx-auto bg-green-100 rounded-full flex items-center justify-center text-green-500 mb-4">
+                    <i class="fa-brands fa-whatsapp text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">WhatsApp</h3>
+                <p class="text-gray-600 mb-6 text-lg">844 107 0431</p>
+                <a href="https://wa.me/528441070431" target="_blank" class="bg-[#25D366] text-white px-8 py-3 rounded-full font-bold shadow-md shadow-green-500/30 hover:bg-[#20b858] transition-all duration-300 inline-block">
+                    Enviar mensaje
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 border-t border-pink-100 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+            <!-- Logo Footer -->
+            <div class="flex items-center gap-3 mb-6">
+                <img src="294343089_905604263709300_4509443319377831911_n.jpg" alt="Logo Pasteles SUSY" class="h-12 w-12 rounded-full border border-pink-200 object-cover grayscale opacity-80">
+                <span class="font-serif font-bold text-2xl text-gray-400 tracking-wide">Pasteles SUSY</span>
+            </div>
+            
+            <p class="text-gray-400 text-sm font-light text-center">
+                &copy; 2026 Pasteles SUSY. Todos los derechos reservados. <br>
+                Hecho con amor y azúcar.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante WhatsApp Exacto (+528441070431) -->
+    <a href="https://wa.me/528441070431" target="_blank" class="fixed bottom-6 right-6 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center text-4xl shadow-[0_4px_15px_rgba(37,211,102,0.5)] hover:bg-[#20b858] hover:-translate-y-2 transition-all duration-300 z-50 group">
+        <i class="fa-brands fa-whatsapp group-hover:scale-110 transition-transform"></i>
+    </a>
+
+</body>
+</html>
